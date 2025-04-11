@@ -132,7 +132,7 @@ export const Screen = (): JSX.Element => {
         <header className="relative w-full h-[579px]">
           <div className="w-full h-20 bg-[#efefef]">
             <div className="container mx-auto flex justify-between items-center h-full px-4">
-              <img className="w-40 h-11" alt="Logo bravo" />
+              <img src='/src/assets/logo.png' className="w-40 h-11" alt="Logo bravo" />
 
               <NavigationMenu className="hidden md:flex">
                 <NavigationMenuList className="flex gap-6">
@@ -144,7 +144,7 @@ export const Screen = (): JSX.Element => {
                         {item.text}
                       </NavigationMenuLink>
                       {item.active && (
-                        <div className="w-[85px] h-[5px] bg-[#d82e2a] mt-2" />
+                        <div className="h-[5px] bg-[#d82e2a] mt-2" />
                       )}
                     </NavigationMenuItem>
                   ))}
@@ -153,16 +153,16 @@ export const Screen = (): JSX.Element => {
 
               <div className="flex items-center gap-4">
                 <div className="flex flex-col items-center">
-                  <img className="w-8 h-8 object-cover" alt="Telephone" />
-                  <span className="[font-family:'Inter',Helvetica] font-normal text-black text-xs">
-                    Call
-                  </span>
+                  <img
+                    alt="Call"
+                    src="/src/assets/call.png"
+                  />
                 </div>
                 <div className="flex flex-col items-center">
-                  <img className="w-8 h-8 object-cover" alt="Line" />
-                  <span className="[font-family:'Inter',Helvetica] font-normal text-black text-xs">
-                    Line
-                  </span>
+                  <img
+                    alt="Line"
+                    src="/src/assets/line.png"
+                  />
                 </div>
                 <div className="flex flex-col items-center">
                   <img className="w-8 h-8 object-cover" alt="Messenger" />
@@ -854,7 +854,7 @@ export const Screen = (): JSX.Element => {
 
           <div className="w-full h-[75px] bg-[#a60100] flex items-center justify-center">
             <p className="[font-family:'Sukhumvit_Set-Medium',Helvetica] font-medium text-white text-lg text-center">
-              © Copyright 2024 All Rights Reserved. The Bravo by Luckymedal
+              &copy; Copyright 2024 All Rights Reserved. The Bravo by Luckymedal
             </p>
           </div>
 
